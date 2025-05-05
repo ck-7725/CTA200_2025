@@ -4,7 +4,10 @@ cd CTA200_2025
 mkdir assignment_1
 touch README.md
 vi README.md
-cd assignment_1
+cd /home/murray
+find -name Hello_world.c -print 2>/dev/null
+find -name Hello_world.py -print 2>/dev/null
+cd fs/lustre/scratch/ckuang/CTA200_2025/assignment_1
 cp /home/murray/Papers/tmp/Hello_world.c Hello_world.c
 mv Hello_world.c Hello_world_Kuang.c
 cp /home/murray/tmp/Hello_world.py Hello_world.py
