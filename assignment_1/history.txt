@@ -1,0 +1,19 @@
+cd /fs/lustre/scratch/ckuang
+mkdir CTA200_2025
+cd CTA200_2025
+mkdir assignment_1
+touch README.md
+vi README.md
+cd assignment_1
+cp /home/murray/Papers/tmp/Hello_world.c Hello_world.c
+mv Hello_world.c Hello_world_Kuang.c
+cp /home/murray/tmp/Hello_world.py Hello_world.py
+mv Hello_world.py Hello_world_Kuang.py
+gcc -o Hello_world.x Hello_world_Kuang.c
+./Hello_world.x
+python Hello_world_Kuang.py
+vi Hello_world_Kuang.c
+./Hello_world_Kuang.c > output_c.txt
+vi Hello_world_Kuang.py
+python Hello_world_Kuang_py > output_python.txt
+history > history.txt
